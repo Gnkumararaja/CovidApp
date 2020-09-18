@@ -1,0 +1,81 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="covidapp.CovidApp.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+<!--	<App>
+		<pages>-->
+			<Page title="Covid-19" id="pgtitle">
+				 <Toolbar>
+ <ToolbarSpacer/>
+        <SearchField
+        width="20%"
+          liveChange="onSearch"></SearchField>
+        
+      </Toolbar>
+				<content>
+					<Table id="tableid" items="{/Countries}" growing="true" width="auto" growingThreshold="100" sticky="ColumnHeaders">
+						<columns>
+							<Column>
+								<header>
+									<Text text="Country"/>
+								</header>
+							</Column>
+							
+								<Column>
+								<header>
+									<Text text="NewConfirmed"/>
+								</header>
+							</Column>
+							
+								<Column>
+								<header>
+									<Text text="TotalConfirmed"/>
+								</header>
+							</Column>
+							
+								<Column>
+								<header>
+									<Text text="NewDeaths"/>
+								</header>
+							</Column>
+							
+								<Column>
+								<header>
+									<Text text="TotalDeaths"/>
+								</header>
+							</Column>
+							
+								<Column>
+								<header>
+									<Text text="NewRecovered"/>
+								</header>
+							</Column>
+							
+							<Column>
+								<header>
+									<Text text="TotalRecovered"/>
+								</header>
+							</Column>
+							
+							<Column>
+								<header>
+									<Text text="Date"/>
+								</header>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<Text text="{Country}"/>
+								<Text text="{NewConfirmed}"/>
+								<Text text="{TotalConfirmed}"/>
+								<Text text="{NewDeaths}"/>
+								<Text text="{TotalDeaths}"/>
+								<Text text="{NewRecovered}"/>
+								<Text text="{TotalRecovered}"/>
+								<Text text="{Date}"/>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+	<!--	</pages>
+	</App>-->
+</mvc:View>
